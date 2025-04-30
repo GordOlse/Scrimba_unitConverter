@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.container {
+  background-color: #6943ff;
+}
+.converted-value {
+  background-color: #ffffff;
+}
+input {
+  background-color: #6943ff;
+  border-color: #f4f4f4;
+  border-radius: 5px;
+  border-width: 2px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  width: 70px;
+}
+button {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  border-width: 2px;
+  width: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #848181;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+.converted-value {
+  margin: 20px 10px;
+  border-radius: 5px;
+}
