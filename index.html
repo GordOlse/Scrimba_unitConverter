@@ -4,24 +4,24 @@
   </head>
   <body>
     <div class="container">
-      <h3>Metric to Imperial Unit Converter</h3>
+      <h3 class="title">Metric to Imperial Unit Converter</h3>
       <div class="input">
         <div><input type="text" class="metric-value" /></div>
         <div><button class="convert-btn">Convert</button></div>
       </div>
     </div>
     <div class="conversion-content">
-      <div class="converted-value">
+      <div class="converted-tbl">
         <p class="value-title">Length (Meter/Feet)</p>
-        <p class="imp-value">Converted value</p>
+        <p class="imp-value" id="length-val">Converted value</p>
       </div>
-      <div class="converted-value">
+      <div class="converted-tbl">
         <p class="value-title">Volume (Liters/Gallons)</p>
-        <p class="imp-value">Converted value</p>
+        <p class="imp-value" id="volume-val">Converted value</p>
       </div>
-      <div class="converted-value">
+      <div class="converted-tbl">
         <p class="value-title">Mass (Kilo/Pounds)</p>
-        <p class="imp-value">Converted value</p>
+        <p class="imp-value" id="weight-val">Converted value</p>
       </div>
     </div>
     <script src="index.js"></script>
