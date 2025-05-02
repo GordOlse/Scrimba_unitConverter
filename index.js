@@ -12,5 +12,46 @@ let weightVal = document.getElementById('weight-val');
 convertBtn.addEventListener('click', function () {
   //lengthVal.textContent = 'Changed';
   let convertNum = document.getElementById('convert-num').value;
-  console.log(convertNum);
+
+  lengthVal.innerHTML = `${convertNum} Meters = ${convertLength(
+    convertNum
+  ).toFixed(3)} feet | ${convertNum} Feet = ${convertLengthimp(
+    convertNum
+  ).toFixed(3)} meters`;
+
+  volumeVal.innerHTML = `${convertNum} Liters = ${convertVolume(
+    convertNum
+  ).toFixed(3)} gallons | ${convertNum} Gallons = ${convertVolumeimp(
+    convertNum
+  ).toFixed(3)} liters`;
+
+  weightVal.innerHTML = `${convertNum} Kilograms = ${convertMass(
+    convertNum
+  ).toFixed(3)} pounds | ${convertNum} Pounds = ${convertMassimp(
+    convertNum
+  ).toFixed(3)} kilograms`;
 });
+
+function convertLength(val) {
+  return val * 3.281;
+}
+
+function convertVolume(val) {
+  return val * 0.264;
+}
+
+function convertMass(val) {
+  return val * 2.204;
+}
+
+function convertLengthimp(val) {
+  return val / 3.281;
+}
+
+function convertVolumeimp(val) {
+  return val / 0.264;
+}
+
+function convertMassimp(val) {
+  return val / 2.204;
+}
